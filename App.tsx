@@ -5,35 +5,36 @@ import {
   Text,
   View,
 } from 'react-native';
+import { nw, nh } from './normalize.helper';
 const categorySrc = require("./assets/categories/sushi.png")
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#141414',
     height: '100%',
-    padding: 10
+    padding: nw(10)
   },
 });
 
 const cardStyles = StyleSheet.create({
   container: {
     backgroundColor: '#1C1C1C',
-    width: 165,
-    height: 70,
-    borderRadius: 10,
+    width: nw(165),
+    height: nh(70),
+    borderRadius: nw(10),
     display: 'flex',
     flexDirection: 'row',
     alignItems: "center",
-    paddingHorizontal: 10
+    paddingHorizontal: nw(10)
   },
   image: {
-    width: 40,
-    height: 40,
+    width: nw(40),
+    height: nw(40) 
   },
   text: {
     color: 'white',
-    paddingLeft: 15,
-    fontSize: 13,
+    paddingLeft: nw(15),
+    fontSize: nh(13),
     fontWeight: "300",
   },
 });
