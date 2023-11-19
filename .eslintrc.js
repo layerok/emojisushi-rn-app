@@ -1,4 +1,7 @@
 module.exports = {
   root: true,
-  extends: '@react-native',
+  extends: '@react-o',
+  rules: {
+    '@typescript-eslint/no-unused-vars': 'off',
+  },
 };
