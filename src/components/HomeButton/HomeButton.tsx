@@ -1,6 +1,6 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
-import {nw, nh} from '../../../normalize.helper';
-const HomeButtonIcon = require('./home.png');
+import {StyleSheet, View} from 'react-native';
+import {nw} from '../../../normalize.helper';
+import HomeButtonSvg from "./home.svg";
 
 const styles = StyleSheet.create({
       container: {
@@ -27,9 +27,8 @@ const styles = StyleSheet.create({
 
 export const HomeButton = () => {
   return (
-    <View
-      style={[styles.container, styles.shadowProp]}>
-      <Image source={HomeButtonIcon}  style={styles.img}/>
+    <View style={[styles.container, styles.shadowProp]}>
+      <HomeButtonSvg style={styles.img} />
     </View>
   );
 };
